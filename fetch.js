@@ -4,7 +4,7 @@ function getInfo (){
         let lon = position.coords.longitude;
         let lat = position.coords.latitude;
 
-        fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`).then(res => res.json()).then(data => {
+        fetch().then(res => res.json()).then(data => {
 
          console.log(data);
          weatherInfo(data);
