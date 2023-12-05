@@ -47,7 +47,8 @@ The application retrieves product data from a remote API. Therefore, an internet
 
 - `index.html`: Main HTML file for the product listing page.
 - `product.html`: HTML file for the product detail page.
-- `style.css`: CSS file for styling the product listing and detail pages.
+- `style.css`: CSS file for styling the main page.
+- `styleproduct.css`: CSS file for styling the product listing page.
 - `script.js`: JavaScript file for the logic of the product listing page.
 - `product.js`: JavaScript file for the logic of the product detail page.
 
