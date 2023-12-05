@@ -1,25 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport configuration -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
-    <title>Document</title>
+
+    <!-- Title of the HTML document -->
+    <title>Product Listing</title>
+
+    <!-- Link to an external stylesheet for styling -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- Main heading for the page -->
     <h1 class="heading">Products:</h1>
-    <div id="cards">
-        <!-- <div class="card">
-        <h1 class="title">title</h1>
-        <img src="https://images.pexels.com/photos/18977904/pexels-photo-18977904/free-photo-of-porcelain-tableware-on-a-table.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-            alt="img" class="images">
-        <p>description</p>
-        <p class="category">Category</p>
-        <p class="price">price</p>
-    </div> -->
+
+    <!-- Container for filtering options -->
+    <div class="filter-container">
+        <!-- Label for the category selection dropdown -->
+        <label for="categorySelect">Filter by Category:</label>
+
+        <!-- Dropdown/select box for filtering products by category -->
+        <select id="categorySelect">
+            <!-- Default option to show all categories -->
+            <option value="all">All Categories</option>
+        </select>
     </div>
+
+    <!-- Container for the search input -->
+    <div class="search-container">
+        <!-- Label for the search input -->
+        <label for="searchInput">Search:</label>
+
+        <!-- Input field for entering search keywords -->
+        <input type="text" id="searchInput" placeholder="Enter keyword">
+    </div>
+
+    <!-- Container for displaying product cards -->
+    <div id="cards"></div>
+
+    <!-- Navigation container for pagination buttons -->
+    <nav id="pagination"></nav>
+
+    <!-- Script tag to link the JavaScript file for dynamic functionality -->
+    <script src="./script.js"></script>
 </body>
 
 </html>
