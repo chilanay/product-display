@@ -1,82 +1,90 @@
+/* Resetting default styles for all elements */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Styling for the entire body of the document */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif; /* Setting the default font family */
+    background-color: #f4f4f4; /* Setting a light background color */
 }
 
+/* Styling for the main heading of the page */
 .heading {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #333;
+    text-align: center; /* Centering the text */
+    font-size: 40px; /* Setting the font size */
+    margin-bottom: 18px; /* Adding space below the heading */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Providing fallback font families */
+    color: #333; /* Setting text color */
 }
 
+/* Styling for the container holding product details cards */
 #cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Stacking child elements vertically */
+    justify-content: center; /* Centering items along the vertical axis */
+    align-items: center; /* Centering items along the horizontal axis */
 }
 
+/* Styling for individual product detail cards */
 .card {
-    width: 60%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    padding: 18px;
-    margin: 20px;
-    border-radius: 8px;
-    background-color: #fff;
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
+    width: 60%; /* Setting the width of the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow */
+    text-align: left; /* Aligning text to the left */
+    padding: 18px; /* Adding padding inside the card */
+    margin: 20px; /* Adding margin around the card */
+    border-radius: 8px; /* Adding rounded corners */
+    background-color: #fff; /* Setting the background color to white */
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition effect on hover */
+    display: flex; /* Using flexbox for layout within the card */
+    align-items: center; /* Centering items along the vertical axis */
 }
 
+/* Styling for product images within the card */
 .images {
-    width: 30%;
-    height: auto;
-    border-radius: 5px;
-    margin-right: 20px;
-    margin-left: 20px;
-
+    width: 30%; /* Setting the width of the image */
+    height: auto; /* Maintaining the aspect ratio */
+    border-radius: 5px; /* Adding rounded corners to the image */
+    margin-right: 20px; /* Adding margin to the right of the image */
+    margin-left: 20px; /* Adding margin to the left of the image */
 }
 
+/* Styling for the title of the product within the card */
 .title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 24px; /* Setting the font size */
+    font-weight: bold; /* Making the text bold */
+    color: #333; /* Setting text color */
+    margin-bottom: 10px; /* Adding space below the title */
 }
 
+/* Styling for various product details (price, discount, category, stock, description) within the card */
 .price,
 .discount,
 .category,
 .stock,
 .description {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-
+    font-size: 16px; /* Setting the font size */
+    color: #777; /* Setting a subdued text color */
+    margin-bottom: 10px; /* Adding space below each detail */
+    margin-left: 10px; /* Adding left margin to separate details from the image */
+    margin-right: 10px; /* Adding right margin to separate details from the card edges */
 }
 
+/* Styling for the "Back to Products" link */
 a {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 10px;
+    display: block; /* Making the link a block-level element */
+    text-align: center; /* Centering the text */
+    margin-top: 20px; /* Adding space above the link */
+    text-decoration: none; /* Removing the default underline */
+    color: #3498db; /* Setting link color */
+    font-weight: bold; /* Making the text bold */
+    font-size: 18px; /* Setting the font size */
+    margin-bottom: 10px; /* Adding space below the link */
 }
 
+/* Styling for the link on hover */
 a:hover {
-    color: #2980b9;
+    color: #2980b9; /* Changing link color on hover */
 }
