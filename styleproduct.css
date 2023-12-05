@@ -19,9 +19,9 @@ body {
 
 #cards {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .card {
@@ -63,7 +63,7 @@ body {
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    display: inline-block;
+
 }
 
 a {
@@ -74,6 +74,7 @@ a {
     color: #3498db;
     font-weight: bold;
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 a:hover {
